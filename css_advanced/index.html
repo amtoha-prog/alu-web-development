@@ -1,242 +1,233 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>SmileSchool</title>
-    <link href="styles.css" rel="stylesheet">
-  </head>
-  <body>
-
-<header>
-  <div>
-    <a href="#"><img src="logo.png" alt="SmileSchool logo" /></a>
-  </div>
-  <div>
-    <a href="#">Courses</a>
-    <a href="#">Pricing</a>
-    <a href="#">Login</a>
-  </div>
-
-  <main>
-  <section>
-
-    <div>
-      <h1>Get schooled</h1>
-      <p>Smiles - Grin - Laugh</p>
-      <button>Register for free</button>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmileSchool — Get Schooled</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<!-- HERO + HEADER -->
+<section class="hero" id="top">
+  <img class="hero__bg" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/bg.jpg" alt="">
+ 
+  <header class="site-header">
+    <div class="container">
+      <a href="#top">
+        <img class="logo-mark" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/logo.svg" alt="SmileSchool">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#tutorials">Courses</a></li>
+          <li><a href="#membership">Pricing</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
-
-    <div>
-      <h2>Learn from the pros</h2>
-      <div>
-
-        <div>
-          <img src="phillip-massey.jpg" alt="Phillip Massey" />
-          <h3>Phillip Massey</h3>
-          <p>« Smile of the year » 2018 - 2019</p>
-        </div>
-
-        <div>
-          <img src="nannie-lawrence.jpg" alt="Nannie Lawrence" />
-          <h3>Nannie Lawrence</h3>
-          <p>Best « little smile » 2017</p>
-        </div>
-
-        <div>
-          <img src="bruce-walters.jpg" alt="Bruce Walters" />
-          <h3>Bruce Walters</h3>
-          <p>Best « friend Smile » live performance 2019</p>
-        </div>
-
-        <div>
-          <img src="henry-hughes.jpg" alt="Henry Hughes" />
-          <h3>Henry Hughes</h3>
-          <p>« 24h smiles » winner 2016 - 2019</p>
-        </div>
-
-      </div>
+  </header>
+ 
+  <div class="hero__content container">
+    <h1 class="hero__title">Get schooled</h1>
+    <p class="hero__tagline">
+      <span>Smiles</span><span>Grin</span><span>Laugh</span>
+    </p>
+    <div class="hero__cta">
+      <a href="#membership" class="btn-primary">Register for free</a>
     </div>
-
-  </section>
-  <main>
-  <section>
-    <!-- banner content from before -->
-  </section>
-
-  <section>
-    <div>
-      <img src="person-name.jpg" alt="Person Name" />
-      <div>
-        <blockquote>
-          « Those tutorials are concise and go straight to the point.
-          I can't think of a better place to learn smiling. And it's so fun! »
-        </blockquote>
-        <p>Person Name</p>
-        <p>Weather presenter</p>
+ 
+    <h2 class="hero__subheading"><strong>Learn</strong> <span>from the pros</span></h2>
+ 
+    <div class="pros">
+      <div class="pro-card">
+        <img class="pro-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/philip.jpg" alt="Phillip Massey">
+        <p class="pro-card__name">Phillip Massey</p>
+        <p class="pro-card__quote">« Smile of the year » 2018 - 2019</p>
       </div>
-    </div>
-  </section>
-
-  <section>
-  <h1>Most popular tutorials</h1>
-
-  <div>
-
-    <div>
-      <img src="diagonal-smile.jpg" alt="Diagonal Smile" />
-      <h2>Diagonal Smile</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-      <div>
-        <img src="phillip-massey-thumb.jpg" alt="Phillip Massey" />
-        <h3>Phillip Massey</h3>
+      <div class="pro-card">
+        <img class="pro-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/nannie.jpg" alt="Nannie Lawrence">
+        <p class="pro-card__name">Nannie Lawrence</p>
+        <p class="pro-card__quote">Best « little smile » 2017</p>
       </div>
-      <div>
-        <div>
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-        </div>
-        <p>8 min</p>
+      <div class="pro-card">
+        <img class="pro-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/bruce.jpg" alt="Bruce Walters">
+        <p class="pro-card__name">Bruce Walters</p>
+        <p class="pro-card__quote">Best « Friend Smile » live performance 2019</p>
       </div>
-    </div>
-
-    <div>
-      <img src="sad-smile.jpg" alt="Sad Smile" />
-      <h2>Sad Smile</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-      <div>
-        <img src="phillip-massey-thumb.jpg" alt="Phillip Massey" />
-        <h3>Phillip Massey</h3>
-      </div>
-      <div>
-        <div>
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-        </div>
-        <p>8 min</p>
-      </div>
-    </div>
-
-    <div>
-      <img src="natural-smile.jpg" alt="Natural Smile" />
-      <h2>Natural Smile</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-      <div>
-        <img src="phillip-massey-thumb.jpg" alt="Phillip Massey" />
-        <h3>Phillip Massey</h3>
-      </div>
-      <div>
-        <div>
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-        </div>
-        <p>8 min</p>
-      </div>
-    </div>
-
-    <div>
-      <img src="happy-smile.jpg" alt="Happy Smile" />
-      <h2>Happy Smile</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-      <div>
-        <img src="phillip-massey-thumb.jpg" alt="Phillip Massey" />
-        <h3>Phillip Massey</h3>
-      </div>
-      <div>
-        <div>
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-          <img src="star.png" alt="star" />
-        </div>
-        <p>8 min</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h1>Free membership</h1>
-
-  <div>
-    <div>
-      <img src="smile-icon.png" alt="icon" />
-      <h2>Lorem ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div>
-      <img src="smile-icon.png" alt="icon" />
-      <h2>Lorem ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div>
-      <img src="smile-icon.png" alt="icon" />
-      <h2>Lorem ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div>
-      <img src="smile-icon.png" alt="icon" />
-      <h2>Lorem ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-
-  <button>Register for free</button>
-</section>
-<section>
-  <h1>F.A.Q.</h1>
-
-  <div>
-    <div>
-      <div>
-        <h2>How does this work?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div>
-        <h2>How does this work?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-
-    <div>
-      <div>
-        <h2>How does this work?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div>
-        <h2>How does this work?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="pro-card">
+        <img class="pro-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/henry.jpg" alt="Henry Hughes">
+        <p class="pro-card__name">Henry Hughes</p>
+        <p class="pro-card__quote">« 24h smiles » winner 2016 - 2019</p>
       </div>
     </div>
   </div>
 </section>
-
-<footer>
-  <div>
+ 
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="container">
+    <img class="testimonial__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/testimonial.jpg" alt="">
     <div>
-      <img src="logo.png" alt="SmileSchool logo" />
-      <div>
-        <a href="#"><img src="facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="twitter.png" alt="Twitter" /></a>
-        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+      <p class="testimonial__quote">« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</p>
+      <p class="testimonial__name">Person Name</p>
+      <p class="testimonial__role">weather presenter</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============================= TUTORIALS ============================= -->
+<section class="tutorials" id="tutorials">
+  <div class="container">
+    <h2 class="tutorials__heading">Most <strong>popular</strong> tutorials</h2>
+ 
+    <div class="tutorials__grid">
+ 
+      <article class="tuto-card">
+        <div class="tuto-card__preview" style="background-image:url('https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/video-1.jpg')">
+          <img class="tuto-card__play" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/play.svg" alt="Play">
+        </div>
+        <div class="tuto-card__body">
+          <h3 class="tuto-card__title">Diagonal Smile</h3>
+          <p class="tuto-card__desc">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+          <div class="tuto-card__meta">
+            <img class="tuto-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/philip.jpg" alt="">
+            <span class="tuto-card__author">Phillip Massey</span>
+            <span class="tuto-card__duration">8 min</span>
+          </div>
+          <img class="tuto-card__rating" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/rating.svg" alt="5 star rating">
+        </div>
+      </article>
+ 
+      <article class="tuto-card">
+        <div class="tuto-card__preview" style="background-image:url('https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/video-2.jpg')">
+          <img class="tuto-card__play" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/play.svg" alt="Play">
+        </div>
+        <div class="tuto-card__body">
+          <h3 class="tuto-card__title">Sad Smile</h3>
+          <p class="tuto-card__desc">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+          <div class="tuto-card__meta">
+            <img class="tuto-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/philip.jpg" alt="">
+            <span class="tuto-card__author">Phillip Massey</span>
+            <span class="tuto-card__duration">8 min</span>
+          </div>
+          <img class="tuto-card__rating" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/rating.svg" alt="5 star rating">
+        </div>
+      </article>
+ 
+      <article class="tuto-card">
+        <div class="tuto-card__preview" style="background-image:url('https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/video-3.jpg')">
+          <img class="tuto-card__play" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/play.svg" alt="Play">
+        </div>
+        <div class="tuto-card__body">
+          <h3 class="tuto-card__title">Natural Smile</h3>
+          <p class="tuto-card__desc">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+          <div class="tuto-card__meta">
+            <img class="tuto-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/philip.jpg" alt="">
+            <span class="tuto-card__author">Phillip Massey</span>
+            <span class="tuto-card__duration">8 min</span>
+          </div>
+          <img class="tuto-card__rating" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/rating.svg" alt="5 star rating">
+        </div>
+      </article>
+ 
+      <article class="tuto-card">
+        <div class="tuto-card__preview" style="background-image:url('https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/video-4.jpg')">
+          <img class="tuto-card__play" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/play.svg" alt="Play">
+        </div>
+        <div class="tuto-card__body">
+          <h3 class="tuto-card__title">Happy Smile</h3>
+          <p class="tuto-card__desc">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+          <div class="tuto-card__meta">
+            <img class="tuto-card__avatar" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/philip.jpg" alt="">
+            <span class="tuto-card__author">Phillip Massey</span>
+            <span class="tuto-card__duration">8 min</span>
+          </div>
+          <img class="tuto-card__rating" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/rating.svg" alt="5 star rating">
+        </div>
+      </article>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- ============================= FREE MEMBERSHIP ============================= -->
+<section class="membership" id="membership">
+  <div class="container">
+    <h2 class="membership__heading"><strong>Free</strong> <span>membership</span></h2>
+ 
+    <div class="membership__grid">
+      <div class="dot-item">
+        <img class="dot-item__icon" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/smile-white.png" alt="">
+        <p class="dot-item__title">Lorem ipsum</p>
+        <p class="dot-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="dot-item">
+        <img class="dot-item__icon" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/smile-white.png" alt="">
+        <p class="dot-item__title">Lorem ipsum</p>
+        <p class="dot-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="dot-item">
+        <img class="dot-item__icon" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/smile-white.png" alt="">
+        <p class="dot-item__title">Lorem ipsum</p>
+        <p class="dot-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="dot-item">
+        <img class="dot-item__icon" src="https://raw.githubusercontent.com/amtoha-prog/image-repo/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/smile-white.png" alt="">
+        <p class="dot-item__title">Lorem ipsum</p>
+        <p class="dot-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
-    <p>Creation Reel 2020</p>
+ 
+    <a href="#" class="btn-primary">Register for free</a>
+  </div>
+</section>
+ 
+<!-- ============================= FAQ ============================= -->
+<section class="faq" id="faq">
+  <div class="container">
+    <h2 class="faq__heading">F.A.Q.</h2>
+ 
+    <div class="faq__grid">
+      <div class="faq-item">
+        <h3 class="faq-item__question">How does this work?</h3>
+        <p class="faq-item__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-item__question">How does this work?</h3>
+        <p class="faq-item__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-item__question">How does this work?</h3>
+        <p class="faq-item__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-item__question">How does this work?</h3>
+        <p class="faq-item__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer class="site-footer">
+  <div class="container">
+    <a href="#top" class="footer-logo">
+      <img src="https://raw.githubusercontent.com/amtoha-prog/image-repo/refs/heads/main/Advanced%20HTML%20Homework%20Resources%20%5BFrontend%20Web%20Dev%5D/logo.svg" alt="">
+    
+    </a>
+
+    <p class="footer-copyright">©smileschool 2020</p>
+
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="https://www.figma.com/api/mcp/asset/7c6c33ae-8fef-4a61-8e79-6535f36e4383.svg" alt=""></a>
+      <a href="#" aria-label="Twitter"><img src="https://www.figma.com/api/mcp/asset/18f39cf5-e6c3-4930-839e-f21118ec01d1.svg" alt=""></a>
+      <a href="#" aria-label="Facebook"><img src="https://www.figma.com/api/mcp/asset/54784536-25a1-45f1-b73b-b48c7c2c6ed4.svg" alt=""></a>
+    </div>
   </div>
 </footer>
 
-</main> 
-</header>
-
-  </body>
+</body>
 </html>
