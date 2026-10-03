@@ -1,0 +1,636 @@
+:root {
+  --navy: #071629;
+  --navy-muted: rgba(7, 22, 41, 0.5);
+  --purple: #c271ff;
+  --white: #ffffff;
+  --white-muted: rgba(255, 255, 255, 0.35);
+
+  --font-body: "Source Sans Pro", sans-serif;
+  --font-logo: "Coiny", cursive;
+
+  --page-width: 1440px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+
+a { text-decoration: none; color: inherit; }
+
+button { font-family: inherit; cursor: pointer; border: none; }
+
+.container {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Buttons ---------------------------------------------------------------- */
+
+.btn-primary {
+  display: inline-block;
+  background: var(--purple);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 13px 34px;
+  border-radius: 22px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.site-header {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 168px;
+}
+
+.logo-mark {
+  height: 30px;
+  width: auto;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  padding: 4px;
+}
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  margin: 5px 0;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(100%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(194,113,255,0.25), rgba(7,22,41,0.6));
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  min-height: 1093px;
+  background: #0a1830;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding-top: 220px;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--white);
+}
+
+.hero__tagline {
+  margin: 40px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.hero__cta {
+  margin-top: 38px;
+}
+
+.hero__subheading {
+  margin: 168px 0 0;
+  font-size: 32px;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero__subheading strong {
+  color: var(--purple);
+  font-weight: 700;
+}
+.hero__subheading span {
+  font-weight: 300;
+}
+
+.pros {
+  margin: 87px auto 0;
+  max-width: 1009px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 98px;
+}
+
+.pro-card {
+  width: 150px;
+  text-align: center;
+}
+
+.pro-card__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.pro-card__name {
+  margin: 10px 0 0;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--white);
+}
+
+.pro-card__quote {
+  margin: 4px 0 0;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  color: var(--white);
+}
+
+/* ==========================================================================
+   Testimonial
+   ========================================================================== */
+
+.testimonial {
+  background-color: var(--purple);
+  background-image: url("https://www.figma.com/api/mcp/asset/4a8c371c-5344-4b00-83ff-11d8e8216700.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 108px 0;
+}
+
+.testimonial .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 943px;
+  padding: 0 20px;
+}
+
+.testimonial__avatar {
+  flex: none;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial__quote {
+  margin: 0;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 33.6px;
+  color: var(--white);
+}
+
+.testimonial__name {
+  margin: 22px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--white);
+}
+
+.testimonial__role {
+  margin: 4px 0 0;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--white);
+}
+
+/* ==========================================================================
+  Pro cards
+   ========================================================================== */
+
+.pro-card__avatar {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.pro-card:hover .pro-card__avatar {
+  transform: scale(1.08); /* slight zoom-in on hover */
+  box-shadow: 0 0 0 4px var(--purple); /* purple ring on hover */
+}
+
+/* ==========================================================================
+   Tutorials
+   ========================================================================== */
+
+.tutorials {
+  padding: 100px 0 110px;
+  text-align: center;
+}
+
+.tutorials__heading {
+  margin: 0 0 60px;
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--navy);
+}
+
+.tutorials__heading strong {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.tutorials__grid {
+  width: 1110px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  gap: 30px;
+  text-align: left;
+}
+
+.tuto-card {
+  width: 255px;
+  background: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(7, 22, 41, 0.18);
+  overflow: hidden;
+}
+
+.tuto-card__preview {
+  position: relative;
+  width: 100%;
+  height: 154px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tuto-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+}
+
+.tuto-card__body {
+  padding: 18px 13px;
+}
+
+.tuto-card__title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.tuto-card__desc {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--navy-muted);
+}
+
+.tuto-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tuto-card__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tuto-card__author {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--purple);
+  flex: 1;
+}
+
+.tuto-card__duration {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+.tuto-card__rating {
+  margin-top: 10px;
+  height: 15px;
+}
+
+.tuto-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tuto-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(7, 22, 41, 0.25);
+}
+
+.tuto-card__preview {
+  transition: filter 0.2s ease;
+}
+
+.tuto-card:hover .tuto-card__preview {
+  filter: brightness(0.85);
+}
+/* ==========================================================================
+   Free membership
+   ========================================================================== */
+
+.membership {
+  position: relative;
+  background-color: var(--navy);
+  background-image: url("https://www.figma.com/api/mcp/asset/323f4cd5-ea33-4970-8db1-415b8f9e516c.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0 68px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.membership__heading {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 60px;
+  font-size: 32px;
+  color: var(--white);
+}
+
+.membership__heading strong {
+  color: var(--purple);
+  font-weight: 700;
+}
+.membership__heading span {
+  font-weight: 300;
+}
+
+.membership__grid {
+  position: relative;
+  z-index: 1;
+  width: 1112px;
+  margin: 0 auto 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot-item {
+  width: 257px;
+  text-align: center;
+}
+
+.dot-item__icon {
+  height: 35px;
+  margin: 0 auto 14px;
+}
+
+.dot-item__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.dot-item__desc {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--white);
+}
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+
+.faq {
+  padding: 110px 0 120px;
+  text-align: center;
+}
+
+.faq__heading {
+  margin: 0 0 74px;
+  font-size: 60px;
+  font-weight: 300;
+  color: var(--navy);
+}
+
+.faq__grid {
+  width: 920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 350px 350px;
+  column-gap: 220px;
+  row-gap: 74px;
+  text-align: left;
+}
+
+.faq-item__question {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.faq-item__answer {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--navy-muted);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  background: var(--navy);
+  padding: 60px 0;
+}
+
+.site-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 165px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 30px;
+  width: auto;
+}
+
+.footer-logo span {
+  font-family: var(--font-logo);
+  font-size: 18px;
+  color: var(--white);
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 12px;
+  color: var(--white-muted);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.social-icons img {
+  height: 20px;
+  width: auto;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .site-header .container,
+  .site-footer .container { padding: 0 40px; }
+
+  .pros,
+  .tutorials__grid,
+  .membership__grid,
+  .faq__grid { width: 90%; max-width: 1010px; }
+}
+
+@media (max-width: 960px) {
+  .hero__title { font-size: 72px; }
+  .hero__tagline { gap: 24px; }
+  .hero__subheading { margin-top: 100px; font-size: 26px; }
+
+  .pros { flex-wrap: wrap; justify-content: center; }
+  .pro-card { width: 45%; }
+
+  .tutorials__grid { grid-template-columns: repeat(2, 255px); justify-content: center; }
+
+  .membership__grid { flex-wrap: wrap; gap: 40px; justify-content: center; }
+  .dot-item { width: 45%; }
+
+  .faq__grid { grid-template-columns: 1fr; column-gap: 0; row-gap: 48px; width: 90%; }
+
+  .testimonial .container { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 640px) {
+  .site-header .container { padding: 0 20px; }
+  .site-nav { display: none; }
+  .nav-toggle { display: block; }
+
+  .hero__content { padding-top: 140px; }
+  .hero__title { font-size: 44px; }
+  .hero__tagline { gap: 14px; font-size: 12px; }
+  .hero__subheading { margin-top: 70px; font-size: 22px; padding: 0 20px; }
+
+  .pro-card { width: 100%; }
+
+  .tutorials__grid { grid-template-columns: 1fr; width: 90%; }
+
+  .dot-item { width: 100%; }
+
+  .site-footer .container { flex-direction: column; gap: 20px; padding: 0 20px; text-align: center; }
+}
