@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>My Tweets</title>
-<meta charset="UTF-8">
-</head>
-<body>
- 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ALU Web Development - Tweets</title>
+
+  </head>
+  <body>
     <header>
+      <div class="logo">
+        <a href="index.html">ALU</a>
+      </div>
+      <nav>
         <ul>
-          <li><a href="index.html">Back to homepage</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tweets.html">Tweets</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
+      </nav>
     </header>
-
     <main>
+      <h1>Tweets</h1>
+      <section id="tweet">
         <article>
-            <blockquote class="twitter-tweet">
-                <p lang="en" dir="ltr">
-                We Must Pace the Frontier: I’ve written a new essay on why the AI industry should slow down, with a three-part plan for doing so.<br><br>
-                Anthropic is unilaterally committing to the first of these steps. We’ll provide third-party evaluators with permanent, employee-level access to our…</p>
-                        &mdash; Dario Amodei (@DarioAmodei)
-                        <a href="https://x.com/DarioAmodei/status/2098773920774074715?ref_src=twsrc%5Etfw">September 12, 2026
-                        </a>
-                </blockquote>
-
-                <script async src="https://platform.x.com/widgets.js"></script>
-
-        </article>
-
-        <aside>
-            <p> 
-             AI is a rapidly evolving field, and it's crucial to consider the ethical implications of its development.
+          <h2>Embedded tweet</h2>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              The best way to learn web development is to build things with plain
+              HTML and CSS first.
             </p>
+            &mdash; ALU Web Development
+            <a href="https://twitter.com/alueducation/status/1">See the tweet</a>
+          </blockquote>
+        </article>
+        <aside>
+          <h3>Why embed a tweet?</h3>
+          <p>
+            The tweet is embedded with the markup provided by the platform, kept
+            as plain HTML with no external script.
+          </p>
         </aside>
+      </section>
+      <section>
+        <p><a href="index.html">Back to the home page</a></p>
+      </section>
     </main>
-
     <footer>
-        <p>Made by Alissa Bonaventura Mtoha <a href="https://github.com/alissabonaventura">GitHub</a></p>
+      <p>Copyright &copy; ALU Web Development - All rights reserved</p>
     </footer>
-
-</body>
+  </body>
 </html>

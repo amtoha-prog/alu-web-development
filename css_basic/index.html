@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hello World!</title>
-<link href="styles.css" rel="stylesheet">
-<link href="base.css" rel="stylesheet">
-
-</head>
-<body class="works_on_smartphone">
-  <header>
-    <ul>
-      <li><a><img src="https://www.holbertonschool.com/holberton-logo.png" alt="hoberton logo" ></a></li>
-      <li><a href="tweets.html">Tweet</a></li>
-    </ul>
-
-  </header>
-
-  <main>
-    <article>
-     <p>The first step in any journey is the most difficult.</p>
-     <p>The neon sign flickered twice before buzzing back to a dull, steady glow.</p>
-     <p>She forgot her coffee on the roof of the car, realization hitting her just as she turned onto the highway.</p>
-     <p>Deep beneath the ocean surface, creatures glowing with their own light glided silently through the dark.</p>
-    </article>
-
-    <aside>
-      <p>The first step in any journey is the most difficult.</p>
-       
-    </aside>  
-
-  </main>
-  
-  <footer>
-    <p>Made by Alissa Bonaventura Mtoha <a href="https://github.com/">GitHub</a></p>
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ALU Web Development - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">ALU</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tweets.html">Tweets</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>ALU Web Development</h1>
+      <section id="about">
+        <article>
+          <h2>About this project</h2>
+          <p>
+            This page is built with plain HTML and CSS only. No framework and no
+            JavaScript library is used anywhere in this project.
+          </p>
+          <p>
+            The layout is built with Flexbox and adapts to small screens using a
+            media query.
+          </p>
+        </article>
+        <aside>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="tweets.html">See the tweet page</a></li>
+            <li>
+              <a href="https://www.alueducation.com/" target="_blank" rel="noopener">
+                African Leadership University
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          A clickable image linking to the home page:
+        </p>
+        <a href="index.html">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_placeholder.svg"
+            alt="Back to the home page"
+            width="220"
+            height="140"
+          />
+        </a>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; ALU Web Development - All rights reserved</p>
+    </footer>
+  </body>
 </html>

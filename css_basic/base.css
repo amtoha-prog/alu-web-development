@@ -1,0 +1,43 @@
+/* base.css - reset and base element styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.5em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1em;
+}
